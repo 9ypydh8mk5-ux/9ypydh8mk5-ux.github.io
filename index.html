@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My YouTube Channel & Merch Store</title>
+    <style>
+        :root {
+            --primary: #ff0000; /* YouTube Red */
+            --dark: #0f0f0f;
+            --light: #f9f9f9;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light);
+            color: var(--dark);
+        }
+        header {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        h1 { margin: 0; font-size: 2.5rem; }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .section-title {
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+        }
+        /* Video Section */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            margin-top: 1rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        /* Merch Grid */
+        .merch-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+        .merch-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            text-align: center;
+            padding: 1rem;
+            border: 1px solid #eee;
+        }
+        .merch-card img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: contain;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background 0.2s;
+        }
+        .btn:hover { background-color: #cc0000; }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--dark);
+            color: #888;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>WELCOME TO MY CHANNEL</h1>
+        <p>Watch the latest videos and grab the official gear!</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- YOUTUBE VIDEO SECTION -->
+        <h2 class="section-title">Latest Video</h2>
+        <div class="video-container">
+            <!-- REPLACE THE LINK BELOW WITH YOUR OWN YOUTUBE EMBED LINK -->
+            <iframe src="https://youtube.com" allowfullscreen></iframe>
+        </div>
+
+        <!-- MERCH SHOP SECTION -->
+        <h2 class="section-title">Official Merchandise</h2>
+        <p>High-quality print-on-demand gear shipped directly to you.</p>
+        
+        <div class="merch-grid">
+            <!-- Item 1 -->
+            <div class="merch-card">
+                <h3>Official Channel Tee</h3>
+                <p>Premium cotton comfort featuring the classic channel logo.</p>
+                <!-- REPLACE THE # WITH YOUR SPREADSHOP/PRINTIFY PRODUCT LINK -->
+                <a href="#" class="btn" target="_blank">View Item</a>
+            </div>
+            
+            <!-- Item 2 -->
+            <div class="merch-card">
+                <h3>Logo Pullover Hoodie</h3>
+                <p>Heavyweight fleece built to last through every stream.</p>
+                <!-- REPLACE THE # WITH YOUR SPREADSHOP/PRINTIFY PRODUCT LINK -->
+                <a href="#" class="btn" target="_blank">View Item</a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Your Channel Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
